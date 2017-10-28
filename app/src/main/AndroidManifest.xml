@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.binhn.englishverstion1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/english2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/english"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Note.edtNote"
+            android:parentActivityName=".Note.Main_Note"
+           ></activity>
+        <activity
+            android:name=".Note.Main_Note"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme1">
+        </activity>
+        <activity
+            android:name=".Question.main_question"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name=".lichSuTest.lich_su_hien"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name=".TraTu.Search_tran"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name=".NguPhap.Main_NguPhap"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".lichSuTest.lichSu_Test"
+
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".TraTu.Tra_Tu"></activity>
+        <activity
+            android:name=".NguPhap.ViewNguPhap"
+            android:parentActivityName=".NguPhap.Main_NguPhap"></activity>
+        <activity
+            android:name=".Setting"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+
+</manifest>
